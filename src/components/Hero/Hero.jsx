@@ -1,13 +1,5 @@
 import { motion } from "framer-motion";
 import "./HeroCSS.css";
-import pic1 from "../../assets/1.png";
-import pic2 from "../../assets/2.png";
-import pic3 from "../../assets/3.png";
-import pic4 from "../../assets/4.png";
-import pic5 from "../../assets/5.png";
-import pic6 from "../../assets/6.png";
-import pic7 from "../../assets/7.png";
-import pic8 from "../../assets/8.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
@@ -102,49 +94,81 @@ const Hero = () => {
               className="span flex items-center space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 1 }}
             >
-              <img src={pic1} alt="" className="spanImg" />
+              <img
+                src="https://img5.pic.in.th/file/secure-sv1/199defbf6688140c2.png"
+                alt=""
+                className="spanImg"
+              />
             </span>
             <span
               className="span flex items-center space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 2 }}
             >
-              <img src={pic2} alt="" className="spanImg" />
+              <img
+                src="https://img5.pic.in.th/file/secure-sv1/2149b83dcabe24b08.png"
+                alt=""
+                className="spanImg"
+              />
             </span>
             <span
               className="span flex items-center space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 3 }}
             >
-              <img src={pic3} alt="" className="spanImg" />
+              <img
+                src="https://img2.pic.in.th/pic/31628c60e792250de.png"
+                alt=""
+                className="spanImg"
+              />
             </span>
             <span
               className="span flex items-center space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 4 }}
             >
-              <img src={pic4} alt="" className="spanImg" />
+              <img
+                src="https://img5.pic.in.th/file/secure-sv1/456093dc8b2a3939f.png"
+                alt=""
+                className="spanImg"
+              />
             </span>
             <span
               className="span flex items-center space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 5 }}
             >
-              <img src={pic5} alt="" className="spanImg" />
+              <img
+                src="https://img2.pic.in.th/pic/5aa26baa00276dcac.png"
+                alt=""
+                className="spanImg"
+              />
             </span>
             <span
               className="span flex items-center space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 6 }}
             >
-              <img src={pic6} alt="" className="spanImg" />
+              <img
+                src="https://img5.pic.in.th/file/secure-sv1/61705b31da7354e7a.png"
+                alt=""
+                className="spanImg"
+              />
             </span>
             <span
               className="span flex items-center  space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 7 }}
             >
-              <img src={pic7} alt="" className="spanImg  " />
+              <img
+                src="https://img2.pic.in.th/pic/718e37af836125ee9.png"
+                alt=""
+                className="spanImg  "
+              />
             </span>
             <span
               className="span flex items-center space-span-100 md:space-span-150 lg:space-span-250"
               style={{ "--i": 8 }}
             >
-              <img src={pic8} alt="" className="spanImg" />
+              <img
+                src="https://img2.pic.in.th/pic/8f7f5a8dbbdbc2c7a.png"
+                alt=""
+                className="spanImg"
+              />
             </span>
           </div>
         </div>
