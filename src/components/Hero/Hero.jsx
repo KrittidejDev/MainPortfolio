@@ -44,7 +44,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="text-gray-200 md:text-2xl text-lg mb-6 md:max-w-[500px] max-w-[300px]"
           >
-            Opportunity is the key to unlocking your greatest potential.
+            Opportunity is the key to unlocking my greatest potential.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
