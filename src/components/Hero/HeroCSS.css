@@ -1,0 +1,220 @@
+.box:hover {
+  animation-play-state: paused;
+}
+
+.mainText {
+  color: #ff00ff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box {
+  position: relative;
+  width: 150px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(var(--spaceSpan));
+}
+
+.span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.spanImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Neon text */
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px var(--color), 0 0 11px var(--color),
+      0 0 19px var(--color), 0 0 40px var(--color), 0 0 80px var(--color),
+      0 0 90px var(--color), 0 0 100px var(--color), 0 0 150px var(--color);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+/* Orbit spin */
+/* KEYFRAMES */
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+  }
+  to {
+    transform: rotate3d(0deg);
+  }
+}
+
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-135deg);
+  }
+  75% {
+    transform: rotate(-225deg);
+  }
+  100% {
+    transform: rotate(-315deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.25;
+    transform: scale(0.75);
+  }
+}
+
+/* GRID STYLING */
+
+.mainOrbit {
+  box-sizing: border-box;
+}
+
+.bodyOrbit {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.spinner-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.leo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-orbit {
+  width: 165px;
+  height: 165px;
+  border: 3px solid #91daffa5;
+  -webkit-animation: spin3D 3s linear 0.2s infinite;
+}
+
+.green-orbit {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #91ffbfa5;
+  -webkit-animation: spin3D 2s linear 0s infinite;
+}
+
+.red-orbit {
+  width: 90px;
+  height: 90px;
+  border: 3px solid #ffca91a5;
+  -webkit-animation: spin3D 1s linear 0s infinite;
+}
+
+.white-orbit {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #ffffff;
+  -webkit-animation: spin3D 10s linear 0s infinite;
+}
+
+.w1 {
+  transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+  transform: rotate3D(1, 2, 0.5, 90deg);
+}
+
+.w3 {
+  transform: rotate3D(0.5, 1, 2, 90deg);
+}

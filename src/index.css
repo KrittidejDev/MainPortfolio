@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .space-span-250 {
+    --spaceSpan: 250px;
+  }
+  .space-span-150 {
+    --spaceSpan: 150px;
+  }
+  .space-span-100 {
+    --spaceSpan: 150px;
+  }
+}
