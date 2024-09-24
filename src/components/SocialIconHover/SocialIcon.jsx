@@ -9,10 +9,7 @@ import "./SocialEffect.css";
 
 const SocialIcon = () => {
   return (
-    <div
-      className="flex items-center justify-center gap-4
-    "
-    >
+    <div className="h-full w-full flex flex-col items-center justify-center gap-4  p-44  ">
       <div className="wrapper w-fit rounded-2xl ">
         <a
           href=""
@@ -38,7 +35,7 @@ const SocialIcon = () => {
         </a>
       </div>
       {/* 2 */}
-      <div className="wrapper w-fit rounded-2xl">
+      {/*       <div className="wrapper w-fit rounded-2xl">
         <a href="" className="icons">
           <FaInstagram />
         </a>
@@ -71,6 +68,11 @@ const SocialIcon = () => {
         <a href="" className="icons">
           <FaGithub />
         </a>
+      </div> */}
+      <div>
+        <h1 className="text-5xl text-white mt-28">
+          ยังไม่เสร็จจะทำเพิ่มเรื่อยๆนะครับ
+        </h1>
       </div>
     </div>
   );

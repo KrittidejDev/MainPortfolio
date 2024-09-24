@@ -1,4 +1,3 @@
-import ButtonNeon from "./components/ButtonNeon/buttonNeon";
 import CardSection from "./components/CardSection/CardSection";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
@@ -11,7 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <CardSection />
-      <ButtonNeon />
+
       <SocialIcon />
     </div>
   );
