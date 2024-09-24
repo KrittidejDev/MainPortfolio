@@ -70,7 +70,7 @@ const SocialIcon = () => {
         </a>
       </div> */}
       <div>
-        <h1 className="text-5xl text-white mt-28">
+        <h1 className="text-xl text-white mt-28">
           ยังไม่เสร็จจะทำเพิ่มเรื่อยๆนะครับ
         </h1>
       </div>
