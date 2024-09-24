@@ -1,6 +1,6 @@
 .card1 {
-  width: 100px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
   /*  background-image: url("https://img2.pic.in.th/pic/pop2360d92a2a6325b70.png"); */
   background-image: var(--cardImg);
   background-size: cover;
@@ -46,8 +46,8 @@
 
 .colaCard {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -56,7 +56,7 @@
 }
 
 .colaCard:hover {
-  width: 600px;
+  width: 320px;
   transition-delay: 0.5s;
 }
 
@@ -75,8 +75,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 8px solid var(--clr);
   background: #191919;
@@ -110,7 +110,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0) rotate(315deg);
-  height: 300px;
+  height: 200px;
 }
 
 .colaCard:hover .colaProductImg {
@@ -118,7 +118,7 @@
   transform: translate(-50%, -50%) scale(1) rotate(15deg);
   top: 45%;
   left: 75%;
-  height: 500px;
+  height: 350px;
 }
 
 .colaContent {
@@ -141,15 +141,17 @@
 .colaContentH2 {
   color: #fff;
   text-transform: uppercase;
-  font-size: 2.4em;
+  font-size: 1.8em;
   line-height: 1em;
 }
 
 .colaContentP {
   color: #fff;
+  font-size: 0.8em;
 }
 
 .colaContentA {
+  font-size: medium;
   position: relative;
   color: #111;
   background: #fff;
@@ -159,4 +161,160 @@
   text-decoration: none;
   font-weight: 600;
   margin-top: 10px;
+}
+
+/* Card 3 */
+.container {
+  position: relative;
+  margin: 0 20px;
+}
+
+.card3 {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background-color: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #03a9f4;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.card3:hover::before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.imageBoxCard3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.card3:hover .imageBoxCard3 {
+  top: 0;
+  transform: translateY(0%);
+}
+
+.imgCard3 {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translateY(-50%, -50%);
+  width: 200px;
+}
+
+.contentboxCard3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.card3:hover .contentboxCard3 {
+  height: 210px;
+}
+
+.contentCard3H2 {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.card3Price,
+.card3Color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card3:hover .card3Price {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.card3:hover .card3Color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.card3ColorH3,
+.card3PriceH3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.card3Span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+  color: #111111;
+  background-color: #ffffff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card3PriceSpan:hover {
+  background-color: #03a9f4;
+}
+
+.card3ColorSpan {
+  width: 20px;
+  height: 20px;
+  background: var(--clr3);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card3A {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #111111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.card3:hover .a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.75s;
 }

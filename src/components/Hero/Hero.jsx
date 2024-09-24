@@ -59,8 +59,12 @@ const Hero = () => {
                 boxShadow: "0px 0px 8px rgba(0,0,0,0.3)",
               }}
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"
+              onClick={() =>
+                (window.location.href =
+                  "https://github.com/KrittidejDev/MainPortfolio")
+              }
             >
-              Download CV
+              Go to my Git
             </motion.button>
           </motion.p>
         </motion.div>
