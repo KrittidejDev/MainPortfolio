@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <div className=" w-[1400] flex flex-row  place-content-center  flex-wrap mt-10 ">
+    <div className=" w-[1400] h-[100vh] flex flex-row  place-content-center  flex-wrap mt-2 ">
       <div className="grid md:grid-cols-2 place-items-center gap-10">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
